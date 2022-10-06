@@ -1,0 +1,17 @@
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: /home_data/teacher01/llx/YOLOdataset  # teacher01 root dir
+path: /home_data/teacher02/hh/yoloV5/dataset  # lizuhe root dir
+#train: images\train  # train images (relative to 'path') 39384 images
+#train: dataset_split/ImageSets01/train01.txt  # train images (relative to 'path') 39384 images
+train: data_split/ImageSets02/train01.txt  # train images (relative to 'path') 39384 images lizuhe
+#val: images\val  # val images (relative to 'path') 15062 images
+#val: dataset_split/ImageSets01/valid01.txt  # val images (relative to 'path') 15062 images
+val: data_split/ImageSets02/valid01.txt  # val images (relative to 'path') 15062 images lizuhe
+test:   # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+#names: [ 'Left_eye_box','Right_eye_box']  # class names
+names: [ 'lymphoma']  # class names
+
